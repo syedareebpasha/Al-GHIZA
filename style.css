@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo a img{
+    width: 100px;
+    height: 100px;
+}
+.navbar {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color:rgb(173, 138, 92);
+}
+ul li a:hover::after {
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a{
+text-decoration: none;
+list-style: none;
+color: rgb(173, 138, 92);
+font-weight: bold;
+cursor: pointer;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+}
+nav{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    background-color: white;
+}
+.navbar div input{
+    width: 200px;
+height: 30px;
+border: 2px solid black;
+}
+.fa-solid{ 
+    font-size: 30px;
+    margin-left: 10px;
+}
+.heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.product-list{
+    width: 300px;
+    height: 400px;
+    /* background-color:rgb(233, 233, 226) ; */
+transition: all 0.3s ease;
+cursor: pointer;}
+.product-list img{
+    width: 300px;
+    height: 300px;
+}
+.product-list div{
+    text-align: center;
+font-weight: bold;
+}
+.product-list div button{
+    width: 250px;
+    background-color: white;
+    font-weight: bold;
+cursor: pointer;
+transition: ease 0.3s;
+}
+.product-list div button:hover {
+background-color: black;
+color: white;
+}
+.product-list:hover{
+    transform: scale(1.05);
+}
+.product {
+    display: flex;
+    gap: 50px;
+justify-content: center;}
+.top-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.top-product img{
+    height: 400px;
+}
+.top-product div button {
+     background-color: white;
+    font-weight: bold;
+cursor: pointer;
+transition: ease 0.3s;
+padding: 10px 20px;
+}
+.top-product div button:hover {
+background-color: black;
+color: white;
+}
+.contact-form {
+    align-items: center;
+}
+.contact-form input{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+}
+.contact-form textarea{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+}
+.contact-form-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
