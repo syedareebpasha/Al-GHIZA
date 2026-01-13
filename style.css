@@ -50,6 +50,7 @@ nav{
     width: 200px;
 height: 30px;
 border: 2px solid black;
+padding-left: 10px;
 }
 .fa-solid{ 
     font-size: 30px;
@@ -139,4 +140,72 @@ color: white;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+.faqs {
+    min-height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20%;
+}
+body {
+        overflow-x:hidden ;
+
+}
+.faqs h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ques {
+padding: 20px;
+background-color: rgb(173, 138, 92);
+font-size: 25px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.ques:hover {
+    background-color: rgb(194, 161, 130);
+}
+.ans p{
+padding: 20px 40px;
+background-color: rgb(179, 150, 112);
+font-size: 25px;
+border-top: 1px solid black;
+}
+.ans {
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+transition: max-height 0.3s ease;
+}
+.faq.active .ans {
+    max-height: 300px;
+}
+.faq-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.faq i{
+    transition: all 0.3s ease;
+}
+.faq.active i{
+    transform: rotate(45deg);
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(173, 138, 92);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+height: 200px;
+padding-top: 50px;
 }
